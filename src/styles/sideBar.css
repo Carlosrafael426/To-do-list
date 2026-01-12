@@ -1,0 +1,202 @@
+/* ===============================
+   SIDEBAR BASE
+================================ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+overflow-y: auto;
+  z-index: 1000;
+}
+
+.content {
+  margin-left: 280px;
+  transition: margin 0.3s ease;
+}
+
+
+/* ===============================
+   SIDEBAR TITLE / LOGO
+================================ */
+.sidebar-title {
+  text-align: center;
+}
+
+.sidebar-logo {
+  width: 200px;
+}
+
+/* ===============================
+   SIDEBAR SECTIONS
+================================ */
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4863ff;
+}
+
+/* ===============================
+   FILTER BUTTONS
+================================ */
+.sidebar-section button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-section button:hover {
+  background-color: #eaeaea;
+}
+
+/* ===============================
+   CALENDAR
+================================ */
+#calendar {
+  padding: 0;
+  margin-top: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flatpickr-calendar {
+  width: 100%;
+  box-shadow: none;
+  border-radius: 12px;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0 !important;
+}
+
+/* ===============================
+   WEATHER CARD
+================================ */
+.weather-card {
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.weather-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.weather-temp {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.weather-city {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.weather-desc {
+  font-size: 13px;
+  opacity: 0.85;
+  text-transform: capitalize;
+}
+
+/* ===============================
+   MOBILE MENU
+================================ */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #4863ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 18px;
+  z-index: 1100;
+  display: none;
+}
+
+/* ===============================
+   OVERLAY
+================================ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+
+#calendar {
+  width: 100%;
+}
+
+
+/* ===== ISOLAMENTO TOTAL DO FLATPICKR ===== */
+#calendar * {
+  all: unset;
+  box-sizing: border-box;
+}
+
+/* RESTAURA O NECESSÁRIO */
+
+

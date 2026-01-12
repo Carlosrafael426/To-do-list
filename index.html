@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/assets/ico.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/globalStyles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/sideBar.css" />
+
+  
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Task Mate</title>
+  </head>
+
+  <body>
+    <!-- Mobile menu -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2 class="sidebar-title">
+        <img class="sidebar-logo" src="./src/assets/logo.png" alt="Task Mate" />
+      </h2>
+
+      <section class="sidebar-section">
+        <h3>Filtros</h3>
+        <button id="filter-all">📋 Todas</button>
+        <button id="filter-completed">✅ Completas</button>
+        <button id="filter-pending">⏳ Pendentes</button>
+        <button id="clear-completed">🧹 Limpar Completas</button>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Calendário</h3>
+        <div id="calendar"></div>
+      </section>
+
+      <section class="sidebar-section">
+        <div class="weather-card" id="weatherCard">
+          <div class="weather-icon" id="weatherIcon">☀️</div>
+
+          <div class="weather-info">
+            <span class="weather-temp" id="weatherTemp">--°</span>
+            <span class="weather-city" id="weatherCity">--</span>
+            <span class="weather-desc" id="weatherDesc">--</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main content -->
+    <div class="content">
+      <header>
+        <img class="logo" src="/src/assets/logo.png" alt="Logo Task Mate" />
+      </header>
+
+      <main>
+        <section class="container-add-task">
+          <h2 class="add-task-title">Adicionar Nova Tarefa</h2>
+
+          <form class="task-form" id="task-form">
+            <input
+              class="input-add-task"
+              type="text"
+              id="task-input"
+              placeholder="Digite sua tarefa aqui"
+              required
+            />
+            <button class="btn-add-task" type="submit">
+              <img
+                class="img-add-task"
+                src="./src/assets/add-task.png"
+                alt="Adicionar tarefa"
+              />
+            </button>
+          </form>
+        </section>
+
+        <section>
+          <h2 class="task-list-title">Lista de Tarefas</h2>
+
+          <div class="container-filter-task">
+            <div>
+              <label class="task-order" for="sort-tasks">Ordenar por:</label>
+              <select class="sort-tasks" id="sort-tasks">
+                <option value="date-asc">Data de Criação (Crescente)</option>
+                <option value="date-desc">Data de Criação (Decrescente)</option>
+                <option value="alpha-asc">Ordem Alfabética (A-Z)</option>
+                <option value="alpha-desc">Ordem Alfabética (Z-A)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="task-order" for="search-tasks">Busca</label>
+              <input
+                class="sort-tasks"
+                type="text"
+                id="search-tasks"
+                placeholder="Digite para buscar..."
+              />
+            </div>
+          </div>
+
+          <ul class="task-list" id="task-list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
