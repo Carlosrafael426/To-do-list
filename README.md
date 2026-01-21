@@ -1,52 +1,70 @@
-# 📝 Task Mate
+# ✅ TaskMate - Gerenciador de Tarefas
 
-Task Mate é uma aplicação de gerenciamento de tarefas desenvolvida com foco em **produtividade**, **organização** e **experiência do usuário**.
+![Preview do Projeto](COLOCA_LINK_DO_GIF_OU_PRINT_AQUI)
 
-O projeto permite criar, filtrar, organizar e concluir tarefas de forma simples, além de contar com **calendário integrado** e **previsão do tempo em tempo real**.
+> Aplicação fullstack para gerenciamento de tarefas pessoais com interface intuitiva.
+
+🔗 **[Acesse o projeto online](https://genuine-task-mate.netlify.app/)**
 
 ---
 
-## 🚀 Funcionalidades
+## 🎯 Sobre o Projeto
 
-- ✅ Adicionar e remover tarefas
-- ☑️ Marcar tarefas como concluídas
-- 🔍 Buscar tarefas por texto
-- 📊 Ordenar tarefas por data ou ordem alfabética
-- 📅 Filtrar tarefas pelo calendário
-- 🗂️ Filtros por status (todas, pendentes, concluídas)
-- 🌦️ Previsão do tempo baseada na localização do usuário
-- 📱 Sidebar responsiva (desktop e mobile)
-- 💾 Persistência de dados com LocalStorage
+TaskMate é um gerenciador de tarefas completo que permite organizar suas atividades do dia a dia. O projeto foi desenvolvido para praticar conceitos de desenvolvimento fullstack, desde a criação da API até o deploy da aplicação.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Flexbox e Grid)
-- JavaScript (Vanilla JS)
-- LocalStorage
-- Flatpickr (calendário)
-- OpenWeather API
+<div>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+</div>
 
 ---
 
-## 📱 Responsividade
+## ✨ Funcionalidades
 
-O layout foi desenvolvido para funcionar corretamente em:
-- 🖥️ Desktop
-- 📱 Dispositivos móveis (sidebar off-canvas)
+- ✅ Criar novas tarefas
+
+- ✅ Marcar tarefas como concluídas
+
+- ✅ Editar tarefas existentes
+
+- ✅ Excluir tarefas
+
+- ✅ Persistência de dados no banco de dados
+
+- ✅ Interface responsiva
 
 ---
 
-## 🖼️ Preview
+## 🚀 Como Rodar Localmente
 
-> Em breve imagens do projeto aqui 🙂
-
----
-
-## 🔧 Como executar o projeto
-
-1. Clone o repositório:
 ```bash
-git clone https://github.com/SEU-USUARIO/task-mate.git
+# Clone o repositório
+git clone https://github.com/Carlosrafael426/taskmate.git
+
+# Entre na pasta do projeto
+cd taskmate
+
+# Instale as dependências do backend
+cd backend
+npm install
+
+# Instale as dependências do frontend
+cd ../frontend
+npm install
+
+# Configure as variáveis de ambiente
+# Crie um arquivo .env baseado no .env.example
+
+# Rode o backend
+cd backend
+npm run dev
+
+# Em outro terminal, rode o frontend
+cd frontend
+npm run dev
