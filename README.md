@@ -1,6 +1,6 @@
 # ✅ TaskMate - Gerenciador de Tarefas
 
-![Preview do Projeto](COLOCA_LINK_DO_GIF_OU_PRINT_AQUI)
+![Preview do Projeto](https://github.com/Carlosrafael426/To-do-list/blob/main/src/assets/print.png)
 
 > Aplicação para gerenciamento de tarefas pessoais com interface intuitiva.
 
