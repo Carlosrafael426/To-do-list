@@ -2,7 +2,7 @@
 
 ![Preview do Projeto](COLOCA_LINK_DO_GIF_OU_PRINT_AQUI)
 
-> Aplicação fullstack para gerenciamento de tarefas pessoais com interface intuitiva.
+> Aplicação para gerenciamento de tarefas pessoais com interface intuitiva.
 
 🔗 **[Acesse o projeto online](https://genuine-task-mate.netlify.app/)**
 
@@ -16,12 +16,7 @@ TaskMate é um gerenciador de tarefas completo que permite organizar suas ativid
 
 ## 🛠️ Tecnologias Utilizadas
 
-<div>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-</div>
+HTML CSS JAVASCRIPT
 
 ---
 
@@ -50,10 +45,6 @@ git clone https://github.com/Carlosrafael426/taskmate.git
 # Entre na pasta do projeto
 cd taskmate
 
-# Instale as dependências do backend
-cd backend
-npm install
-
 # Instale as dependências do frontend
 cd ../frontend
 npm install
@@ -61,10 +52,3 @@ npm install
 # Configure as variáveis de ambiente
 # Crie um arquivo .env baseado no .env.example
 
-# Rode o backend
-cd backend
-npm run dev
-
-# Em outro terminal, rode o frontend
-cd frontend
-npm run dev
